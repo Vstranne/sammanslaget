@@ -1,3 +1,11 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
     width: 100%;
     height: 10vh;
@@ -6,6 +14,143 @@ header {
     flex-direction: row;
     justify-content: center;
 }
-h1 {
-    
+.unityGame {
+    height: 100vh;
+    width: 100%;
 }
+/* Line */
+.line {
+    width: 1200px;
+    height: 0px;
+    border-bottom: 3px solid #686569;
+}
+
+/* Message */
+
+
+/* About #009392; */
+/* .about {
+    background-color: rgb(00, 93, 92, 0.2);
+    width: 80%;
+    height: 600px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    border: #E07C3F 5px solid;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    opacity: 100%;
+    padding: 4px;
+}
+.card img {
+    max-width: 181px;
+}
+
+.cardText {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardText h3 {
+    margin: 0;
+}
+.cardText h4 {
+    margin: 3px;
+}
+.cardText p {
+    font-family: Arial;
+    font-size: 16px;
+    margin-top: 5px;
+} */
+
+.aboutUs {
+    background-color: rgb(62, 46, 36, 0.5);
+    width: 80%;
+    /* height: 600px; */
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background-color: rgb(255, 246, 233);
+    margin: 10px;
+    width: 400px;
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+img {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s linear 300ms, opacity 300ms;
+}
+/* img.hidden {
+    display: none;
+} */
+
+.card h4 {
+    margin: 0;
+}
+
+.card button {
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* .hidden {
+    display: none;
+    animation: fade-out 1s;
+} */
+.visible {
+    opacity: 1;
+    transition: opacity 500ms linear;
+}
+
+.invisible {
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+.info {
+    position: absolute;
+    z-index: 2;
+}
+
+.moreInfo {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.cross {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+
