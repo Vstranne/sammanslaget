@@ -1,33 +1,119 @@
+@font-face {
+  font-family: "Lota Grotesque";
+  src: url(/fonts/Los-Andes-Lota-Grotesque-Regular.woff2);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lota Grotesque";
+  src: url(/fonts/Los-Andes-Lota-Grotesque-SemiBold.woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Lota Grotesque";
+  src: url(/fonts/Los-Andes-Lota-Grotesque-ExLight.woff2);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Canvas Script";
+  src: url(/fonts/CanvasScript-HeavyFill.woff2);
+  font-weight: 800;
+}
+* {
+  box-sizing: border-box;
+}
 body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
-    width: 100%;
-    height: 10vh;
-    background-color: lightgray;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(248, 247, 244, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 5px solid #686569;
+  padding: 0;
+  margin: 0;
+}
+header h1 {
+  font-family: "Canvas Script";
+  font-size: 64px;
+  padding: 0;
+  margin: 0;
 }
 .unityGame {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 94, 100, 0.35);
+  position: relative;
 }
 /* Line */
 .line {
-    width: 1200px;
-    height: 0px;
-    border-bottom: 3px solid #686569;
+  width: 70%;
+  max-width: 1200px;
+  height: 0px;
+  border-bottom: 3px solid #686569;
+  position: absolute;
+  bottom: 0;
+  left: 18.5%;
+  margin-bottom: 50px;
 }
 
 /* Message */
+.message {
+  background-color: rgb(205, 199, 180, 0.2);
+  width: 100%;
+  height: 850px;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  padding: 0;
+  margin: 0;
+}
+.messageContainer {
+  margin: 40px;
+  margin-top: 0;
+}
+.messageContainer h1 {
+  font-family: "Canvas Script";
+  font-size: 48px;
+}
+.messageContainer p {
+  font-family: Los-Andes-Lota-Grotesque-Regular;
+  font-size: 24px;
+}
 
-
+.heartsContainer {
+  margin-left: 5%;
+  margin-top: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.hearts {
+  /* align-self: flex-start; */
+}
+.peopleContainer {
+  /* position: relative; */
+  width: 864px;
+  height: 100%;
+  /* border: 1px solid black; */
+  margin: 0;
+}
+.people {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
 /* About #009392; */
 /* .about {
     background-color: rgb(00, 93, 92, 0.2);
@@ -77,44 +163,82 @@ header {
 } */
 
 .aboutUs {
-    background-color: rgb(62, 46, 36, 0.5);
-    width: 80%;
-    /* height: 600px; */
-    border-radius: 10px;
-    margin: 20px;
-    display: flex;
-    padding: 50px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  background-color: rgb(0, 94, 100, 0.35);
+  width: 100%;
+  /* height: 600px; */
+  /* border-radius: 10px; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 50px; */
+  padding-top: 200px;
+}
+.aboutUsContainer {
+  background-color: rgb(245, 244, 240, 1);
+  width: 56.5%;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.aboutUsContainer img {
+  max-height: 100px;
+}
+.aboutUsInfo {
+  max-width: 80%;
+  font-family: "Lota Grotesque";
+}
+.cardContainer {
+  width: 56.5%;
+  padding-top: 50px;
+  padding-left: 110px;
+  padding-right: 110px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 244, 240, 0.23);
+}
+.aboutUsContainer h2 {
+  font-family: "Canvas Script";
+  font-size: 48px;
+  margin-bottom: 3px;
 }
 .card {
-    background-color: rgb(255, 246, 233);
-    margin: 10px;
-    width: 400px;
-    height: 409px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  background-color: rgb(255, 246, 233);
+  margin: 10px;
+  border-radius: 20px;
+  width: 232px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-img {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 1s linear 300ms, opacity 300ms;
+.info img {
+  visibility: visible;
+  border-radius: 20px 20px 0 0;
+  opacity: 1;
+  transition: visibility 1s linear 300ms, opacity 300ms;
+  max-width: 100%;
 }
 /* img.hidden {
     display: none;
 } */
 
 .card h4 {
-    margin: 0;
+  margin: 0;
 }
 
 .card button {
-    border: none;
-    margin-bottom: 20px;
+  border: none;
+  margin-bottom: 20px;
+  background: none;
 }
 
 /* .hidden {
@@ -122,35 +246,71 @@ img {
     animation: fade-out 1s;
 } */
 .visible {
-    opacity: 1;
-    transition: opacity 500ms linear;
+  opacity: 1;
+  transition: opacity 500ms linear;
 }
 
 .invisible {
-    opacity: 0;
-    transition: opacity 500ms linear;
+  opacity: 0;
+  transition: opacity 500ms linear;
 }
 .info {
-    position: absolute;
-    z-index: 2;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-family: "Lota Grotesque";
+  font-weight: normal;
+  font-size: 16px;
 }
 
 .moreInfo {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-family: "Lota Grotesque";
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+}
+.information {
+  margin: 20px;
+}
+.info h3,
+.moreInfo h3 {
+  font-size: 20;
+  font-family: "Lota Grotesque";
+  font-weight: 600;
+  margin: 0px;
+  margin-top: 12px;
+  margin-bottom: 3px;
+}
+.info h4,
+.moreInfo h4 {
+  font-size: 18px;
+  font-family: "Lota Grotesque";
+  font-weight: 200;
+  margin: 2px;
+}
+
+.arrowDown {
+  margin-top: 8px;
 }
 
 .cross {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  margin-top: 10px;
+  margin-right: 5px;
 }
-
-

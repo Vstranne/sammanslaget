@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | Triangle Visits Square World</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>This is a header</h1>
+      <h1>MÅNGA BÄCKAR SMÅ!</h1>
     </header>
     <section class="unityGame">
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+      <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas" width="960" height="600"></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
+        </div>
+        <div id="unity-mobile-warning">
+          WebGL builds are not supported on mobile devices.
+        </div>
+        <div id="unity-footer">
+          <!-- <div id="unity-webgl-logo"></div> -->
+          <div id="unity-fullscreen-button"></div>
+          <!-- <div id="unity-build-title">Triangle Visits Square World</div> -->
         </div>
       </div>
-      <div id="unity-mobile-warning">
-        WebGL builds are not supported on mobile devices.
+      <div class="line"></div>
+    </section>
+    <section class="message">
+      <div class="heartsContainer">
+        <img class="hearts" src="/images/hearts.png" />
       </div>
-      <div id="unity-footer">
-        <!-- <div id="unity-webgl-logo"></div> -->
-        <div id="unity-fullscreen-button"></div>
-        <!-- <div id="unity-build-title">Triangle Visits Square World</div> -->
+      <article class="messageContainer">
+        <h1>Många bäckar små!</h1>
+        <p>
+          Är kärlek en romans? Vänskap? Medkänsla? Att känna si gbehövd?<br />Att
+          se någon som aldrig förr känt sig sedd?<br />Att kramas, skratta,
+          kanske gråta?
+        </p>
+        <p>Är det kärlek?</p>
+        <p>
+          Kanske är kärlek en god gärning.<br />Ett gott samvete, en gemenskap
+          att höra till.<br />Att inte glömmas bort.
+        </p>
+        <p>
+          Tillhöra ett lag, en vänskapsgrupp, en familj.<br />Överallt delas vi
+          in och tillhör.<br />Men ofta hamnar folk utan grupp, rentav utanför
+          samhället.
+        </p>
+        <p>
+          Man ska aldrig glömma att lyfta blicken, behöver någon din hjälp?<br />Vi
+          tror på många bäckar små gör en stor å, tillsammans hjälps vi åt.<br />Tillsammans
+          kan vi frodas.
+        </p>
+      </article>
+      <div class="peopleContainer">
+        <img class="people" src="images/people.png" />
       </div>
-    </div>
-  </section>
-  <div class="line"></div>
-  <section class="message">
-    <h1>Många bäckar små!</h1>
-    <article>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga, earum rerum omnis labore, aliquid quo inventore sapiente, exercitationem distinctio quasi eum voluptatum cum adipisci quod iste fugiat ratione officia?</p>
-    </article>
-    <article>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga, earum rerum omnis labore, aliquid quo inventore sapiente, exercitationem distinctio quasi eum voluptatum cum adipisci quod iste fugiat ratione officia?</p>
-    </article>
-
-  </section>
+    </section>
     <!-- <section class="about">
       <div class="card">
         <img src="/images/person.png">
@@ -88,64 +109,152 @@
         </div></div>
     </section> -->
     <section class="aboutUs">
-      <div class="card">
-        <img src="/images/person2.png">
-        <h3>Namn Namnsson</h3>
-        <h4>Utbildning</h4>
-        <p>email@email.se</p>
-        <button class="arrowDown"><img src="/images/arrowdown.png"></button>
-      </div>
-      <div class="card">
-        <img src="/images/person2.png">
-        <h3>Namn Namnsson</h3>
-        <h4>Utbildning</h4>
-        <p>email@email.se</p>
-        <button class="arrowDown"><img src="/images/arrowdown.png"></button>
-      </div>
-      <div class="card">
-        <img src="/images/person2.png">
-        <h3>Namn Namnsson</h3>
-        <h4>Utbildning</h4>
-        <p>email@email.se</p>
-        <button class="arrowDown"><img src="/images/arrowdown.png"></button>
-      </div>
-      <div class="card">
-        <img src="/images/person2.png">
-        <h3>Namn Namnsson</h3>
-        <h4>Utbildning</h4>
-        <p>email@email.se</p>
-        <button class="arrowDown"><img src="/images/arrowdown.png"></button>
-      </div>
-      <div class="card">
-        <img src="/images/person2.png">
-        <h3>Namn Namnsson</h3>
-        <h4>Utbildning</h4>
-        <p>email@email.se</p>
-        <button class="arrowDown"><img src="/images/arrowdown.png"></button>
-      </div>
-      <div class="card">
-        <div class="info visible">
-        <img src="/images/person2.png">
-        <h3>Namn Namnsson</h3>
-        <h4>Utbildning</h4>
-        <p>email@email.se</p>
-        <button class="arrowDown"><img src="/images/arrowdown.png"></button>
+      <article class="aboutUsContainer">
+        <div class="aboutUsInfo">
+          <h2>OM OSS</h2>
+          <p>
+            Detta projekt skapades på fyra arbetsdagar utav sex studenter på
+            Yrkeshögskolan YRGO i Göteborg i samband med Räddningsmissionen.
+            Syftet var för oss att hestalta en version av kärlek som vi alla
+            tycker var viktig.<br />Att även små goda gärningar kan få stor
+            positiv inverkan.
+          </p>
         </div>
-        <div class="moreInfo invisible">
-          <h3>Namn Namnsson</h3>
-          <h4>Utbildning</h4>
-        <p class="information">här står det massvis med text som inte syns</p>
-        
-      </div>
-      <button class="cross invisible"><img src="/images/cross.png"></button>
+        <img src="/images/flowersright.png" />
+      </article>
+      <div class="cardContainer">
+        <div class="card">
+          <div class="info visible">
+            <img src="/images/person2.png" />
+            <h3>Vilma Smith</h3>
+            <h4>Manusförfattarestudent</h4>
+            <h4>vilma@gmail.com</h4>
+            <button class="arrowDown"><img src="/images/arrow.png" /></button>
+          </div>
+          <div class="moreInfo invisible">
+            <h3>Vilma Smith</h3>
+            <h4>Manusförfattarestudent</h4>
+            <p class="information">
+              Jag går manusförfattarutbildningen på YRGO.<br />
+              Vi lär oss bland annat om processen från idé till manus,
+              dramaturgiska modeller, dialogskrivande och karaktärsbygge.<br />
+              I detta projekt bidrog vi alla till idégenereringen med ord,
+              associationer och tankar. Vi byggde storyboards och kom gemensamt
+              fram till idéen. Jag gick vidare med att skriva en skiss-outline
+              för hury storyn och händelseförloppet skulle fortgå. Jag skrev
+              text-rutor till spelet och även text till webbsidan om vår
+              tolkning av tematiken kopplad till kundens arbete.
+            </p>
+          </div>
+          <button class="cross invisible">
+            <img src="/images/cross.png" />
+          </button>
+        </div>
+        <div class="card">
+          <div class="info visible">
+            <img src="/images/person2.png" />
+            <h3>Namn Namnsson</h3>
+            <h4>Utbildning</h4>
+            <h4>email@email.se</h4>
+            <button class="arrowDown"><img src="/images/arrow.png" /></button>
+          </div>
+          <div class="moreInfo invisible">
+            <h3>Namn Namnsson</h3>
+            <h4>Utbildning</h4>
+            <p class="information">
+              här står det massvis med text som inte syns
+            </p>
+          </div>
+          <button class="cross invisible">
+            <img src="/images/cross.png" />
+          </button>
+        </div>
+        <div class="card">
+          <div class="info visible">
+            <img src="/images/person2.png" />
+            <h3>Namn Namnsson</h3>
+            <h4>Utbildning</h4>
+            <h4>email@email.se</h4>
+            <button class="arrowDown"><img src="/images/arrow.png" /></button>
+          </div>
+          <div class="moreInfo invisible">
+            <h3>Namn Namnsson</h3>
+            <h4>Utbildning</h4>
+            <p class="information">
+              här står det massvis med text som inte syns
+            </p>
+          </div>
+          <button class="cross invisible">
+            <img src="/images/cross.png" />
+          </button>
+        </div>
+        <div class="card">
+          <div class="info visible">
+            <img src="/images/person2.png" />
+            <h3>Namn Namnsson</h3>
+            <h4>Utbildning</h4>
+            <h4>email@email.se</h4>
+            <button class="arrowDown"><img src="/images/arrow.png" /></button>
+          </div>
+          <div class="moreInfo invisible">
+            <h3>Namn Namnsson</h3>
+            <h4>Utbildning</h4>
+            <p class="information">
+              här står det massvis med text som inte syns
+            </p>
+          </div>
+          <button class="cross invisible">
+            <img src="/images/cross.png" />
+          </button>
+        </div>
+        <div class="card">
+          <div class="info visible">
+            <img src="/images/person2.png" />
+            <h3>Namn Namnsson</h3>
+            <h4>Utbildning</h4>
+            <h4>email@email.se</h4>
+            <button class="arrowDown"><img src="/images/arrow.png" /></button>
+          </div>
+          <div class="moreInfo invisible">
+            <h3>Namn Namnsson</h3>
+            <h4>Utbildning</h4>
+            <p class="information">
+              här står det massvis med text som inte syns
+            </p>
+          </div>
+          <button class="cross invisible">
+            <img src="/images/cross.png" />
+          </button>
+        </div>
+        <div class="card">
+          <div class="info visible">
+            <img src="/images/person2.png" />
+            <h3>Namn Namnsson</h3>
+            <h4>Utbildning</h4>
+            <h4>email@email.se</h4>
+            <button class="arrowDown"><img src="/images/arrow.png" /></button>
+          </div>
+          <div class="moreInfo invisible">
+            <h3>Namn Namnsson</h3>
+            <h4>Utbildning</h4>
+            <p class="information">
+              här står det massvis med text som inte syns
+            </p>
+          </div>
+          <button class="cross invisible">
+            <img src="/images/cross.png" />
+          </button>
+        </div>
       </div>
     </section>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Triangle Visits Square World build.loader.js";
+      var loaderUrl =
+        buildUrl + "/Triangle Visits Square World build.loader.js";
       var config = {
         dataUrl: buildUrl + "/Triangle Visits Square World build.data",
-        frameworkUrl: buildUrl + "/Triangle Visits Square World build.framework.js",
+        frameworkUrl:
+          buildUrl + "/Triangle Visits Square World build.framework.js",
         codeUrl: buildUrl + "/Triangle Visits Square World build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
@@ -187,14 +296,16 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
+        })
+          .then((unityInstance) => {
+            loadingBar.style.display = "none";
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };
+          })
+          .catch((message) => {
+            alert(message);
+          });
       };
       document.body.appendChild(script);
     </script>
