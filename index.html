@@ -7,10 +7,20 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <link rel="stylesheet" href="TemplateData/style.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <h1>MÅNGA BÄCKAR SMÅ!</h1>
+      <nav>
+        <a href="#message"><button>VAD ÄR KÄRLEK?</button></a>
+        <a href="#aboutUs"><button>OM OSS</button></a>
+      </nav>
     </header>
     <section class="unityGame">
       <div id="unity-container" class="unity-desktop">
@@ -32,18 +42,17 @@
       </div>
       <div class="line"></div>
     </section>
-    <section class="message">
+    <section class="message" id="message">
       <div class="heartsContainer">
-        <img class="hearts" src="/images/hearts.png" />
+        <img class="hearts" src="/images/flowersleft.png" />
       </div>
       <article class="messageContainer">
         <h1>Många bäckar små!</h1>
         <p>
-          Är kärlek en romans? Vänskap? Medkänsla? Att känna si gbehövd?<br />Att
+          Är kärlek en romans? Vänskap? Medkänsla? Att känna sig behövd?<br />Att
           se någon som aldrig förr känt sig sedd?<br />Att kramas, skratta,
-          kanske gråta?
+          kanske gråta.<br />Är det kärlek?
         </p>
-        <p>Är det kärlek?</p>
         <p>
           Kanske är kärlek en god gärning.<br />Ett gott samvete, en gemenskap
           att höra till.<br />Att inte glömmas bort.
@@ -58,9 +67,18 @@
           tror på många bäckar små gör en stor å, tillsammans hjälps vi åt.<br />Tillsammans
           kan vi frodas.
         </p>
+
+        <p>
+          På vilket sätt vill du bidra? Läs mer på
+          <a href="https://raddningsmissionen.se">Raddningsmissionen.se</a>
+        </p>
       </article>
       <div class="peopleContainer">
-        <img class="people" src="images/people.png" />
+        <img
+          class="people"
+          src="images/people.png"
+          alt="An adult man and a child"
+        />
       </div>
     </section>
     <!-- <section class="about">
@@ -108,7 +126,7 @@
           <p>text text text text</p>
         </div></div>
     </section> -->
-    <section class="aboutUs">
+    <section class="aboutUs" id="aboutUs">
       <article class="aboutUsContainer">
         <div class="aboutUsInfo">
           <h2>OM OSS</h2>
@@ -247,6 +265,12 @@
         </div>
       </div>
     </section>
+    <footer>
+      <a href="https://yrgo.se"><img src="/images/yrgo.png" alt="YRGO" /></a>
+      <a href="https://raddningsmissionen.se/"
+        ><img src="/images/raddningsmissionen.png" alt="Räddningsmissionen"
+      /></a>
+    </footer>
     <script>
       var buildUrl = "Build";
       var loaderUrl =
