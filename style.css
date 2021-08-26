@@ -93,6 +93,7 @@ header button:hover {
   display: flex;
   flex-direction: row;
   /* align-items: center; */
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
@@ -116,18 +117,19 @@ header button:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: center;
 }
-.hearts {
-  /* align-self: flex-start; */
-}
+/* .hearts {
+  align-self: flex-start;
+} */
 .peopleContainer {
   /* position: relative; */
   width: 802px;
   height: 100%;
   /* border: 1px solid black; */
   margin: 0;
+  display: flex;
 }
 .people {
   width: 100%;
@@ -135,6 +137,7 @@ header button:hover {
   /* position: absolute; */
   object-fit: cover;
   border-radius: 15px 0 0 15px;
+  justify-self: flex-end;
 }
 /* About #009392; */
 /* .about {
@@ -241,8 +244,8 @@ header button:hover {
   background-color: rgb(255, 246, 233);
   margin: 10px;
   border-radius: 20px;
-  width: 232px;
-  height: 300px;
+  width: 300px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -255,6 +258,9 @@ header button:hover {
   opacity: 1;
   transition: visibility 1s linear 300ms, opacity 300ms;
   max-width: 100%;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
 }
 /* img.hidden {
     display: none;
@@ -308,8 +314,10 @@ header button:hover {
   align-items: center;
   font-family: "Lota Grotesque";
   font-weight: normal;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .information {
   margin: 3px;
@@ -364,5 +372,10 @@ footer img {
   .cardContainer {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .message {
+    justify-content: center;
   }
 }
