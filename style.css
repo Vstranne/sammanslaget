@@ -15,7 +15,7 @@
 }
 @font-face {
   font-family: "Canvas Script";
-  src: url(/fonts/CanvasScript-HeavyFill.woff2);
+  src: url(/fonts/Yellow-Design-Studio-CanvasScript-Heavy.woff2);
   font-weight: 800;
 }
 * {
@@ -92,7 +92,6 @@ header button:hover {
   height: 850px;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: space-between;
   padding: 0;
   margin: 0;
@@ -120,90 +119,35 @@ header button:hover {
   justify-content: flex-start;
   align-items: center;
 }
-/* .hearts {
-  align-self: flex-start;
-} */
+
 .peopleContainer {
-  /* position: relative; */
   width: 802px;
   height: 100%;
-  /* border: 1px solid black; */
   margin: 0;
   display: flex;
 }
 .people {
   width: 100%;
   height: 100%;
-  /* position: absolute; */
   object-fit: cover;
   border-radius: 15px 0 0 15px;
   justify-self: flex-end;
 }
-/* About #009392; */
-/* .about {
-    background-color: rgb(00, 93, 92, 0.2);
-    width: 80%;
-    height: 600px;
-    border-radius: 10px;
-    margin: 20px;
-    display: flex;
-    padding: 50px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.card {
-    width: 400px;
-    height: 250px;
-    border: #E07C3F 5px solid;
-    border-radius: 10px;
-    background-color: white;
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    opacity: 100%;
-    padding: 4px;
-}
-.card img {
-    max-width: 181px;
-}
-
-.cardText {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.cardText h3 {
-    margin: 0;
-}
-.cardText h4 {
-    margin: 3px;
-}
-.cardText p {
-    font-family: Arial;
-    font-size: 16px;
-    margin-top: 5px;
-} */
 
 .aboutUs {
   background-color: rgb(0, 94, 100, 0.35);
   width: 100%;
-  /* height: 600px; */
-  /* border-radius: 10px; */
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 50px; */
   padding-top: 200px;
   padding-bottom: 20px;
 }
 .aboutUsContainer {
   background-color: rgb(245, 244, 240, 1);
-  width: 56.5%;
+  width: 1080px;
   border-radius: 15px 15px 0 0;
   display: flex;
   flex-direction: row;
@@ -218,7 +162,7 @@ header button:hover {
   font-family: "Lota Grotesque";
 }
 .cardContainer {
-  width: 56.5%;
+  width: 1080px;
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
@@ -243,7 +187,9 @@ header button:hover {
 .card {
   background-color: rgb(255, 246, 233);
   margin: 10px;
-  border-radius: 20px;
+  border-radius: 22px;
+  border: 2px solid #5c9498;
+  padding: 0;
   width: 300px;
   height: 450px;
   display: flex;
@@ -251,6 +197,7 @@ header button:hover {
   justify-content: center;
   align-items: center;
   position: relative;
+  box-sizing: content-box;
 }
 .info img {
   visibility: visible;
@@ -262,9 +209,6 @@ header button:hover {
   height: 70%;
   object-fit: cover;
 }
-/* img.hidden {
-    display: none;
-} */
 
 .card h4 {
   margin: 0;
@@ -276,10 +220,6 @@ header button:hover {
   background: none;
 }
 
-/* .hidden {
-    display: none;
-    animation: fade-out 1s;
-} */
 .visible {
   opacity: 1;
   transition: opacity 500ms linear;
@@ -368,10 +308,14 @@ footer img {
   margin-left: 35px;
 }
 
-@media screen and (max-width: 1530px) {
+@media screen and (max-width: 1600px) {
   .cardContainer {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .messageContainer p {
+    font-family: "Lota Grotesque";
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 2000px) {
